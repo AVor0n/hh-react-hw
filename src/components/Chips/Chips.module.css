@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid silver;
+  padding: 8px;
+  border-radius: 4px;
+
+  &:focus-within{
+    border: 1px solid #3369f3;
+  }
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  &:not(:empty){
+    margin-bottom: 8px;
+  }
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
