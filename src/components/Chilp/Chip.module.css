@@ -1,0 +1,42 @@
+:root {
+  --size: 24px;
+}
+
+.container {
+    height: var(--size);
+    width: fit-content;
+    border-radius: var(--size);
+    display: flex;
+    align-items: center;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.text{
+    padding-block: 4px;
+    padding-left: 8px;
+    padding-right: 4px;
+
+    &:only-child{
+        padding-right: 8px;
+    }
+}
+
+.closeBtn {
+  height: var(--size);
+  width: var(--size);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
