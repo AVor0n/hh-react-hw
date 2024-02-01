@@ -1,5 +1,5 @@
 import { InputField } from './components/InputField';
-import { Chip } from '../Chilp';
+import { Chip } from '../Chip';
 import * as styles from './Chips.module.css';
 
 interface ChipsProps {
