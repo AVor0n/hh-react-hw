@@ -1,0 +1,54 @@
+.container {
+  --labelDefaultPosY: 50%;
+  position: relative;
+
+  inline-size: 100%;
+
+  .input:placeholder-shown + .label {
+    visibility: hidden;
+
+    opacity: 0;
+  }
+
+  .input:not(:placeholder-shown) + .label,
+  .input:focus:not(:placeholder-shown) + .label {
+    visibility: visible;
+
+    opacity: 1;
+    transform: translate3d(0, -50%, 0) scale(0.8);
+  }
+}
+
+.input {
+  inline-size: 100%;
+  padding-block: 6px 2px;
+  padding-inline: 0;
+
+  font-size: var(--font-md);
+
+  border: none;
+  border-block-end: 1px solid #999999;
+
+  &:focus {
+    outline: none;
+    border-block-end: 1px solid #3369f3;
+  }
+
+  &::placeholder {
+    color: #999999;
+  }
+}
+
+.label {
+  position: absolute;
+  inset-block-start: -2px;
+
+  display: block;
+
+  color: #999999;
+
+  transform: translate3d(0, var(--labelDefaultPosY), 0) scale(1);
+  transform-origin: 0 0;
+
+  transition: all 300ms;
+}
