@@ -7,10 +7,18 @@ export const EditSettingsPanel = () => {
 
   return (
     <div className={styles.container}>
-      <TextBox label="login" onChange={login => setSettings({ ...settings, login })} />
-      <TextBox label="repo name" onChange={repo => setSettings({ ...settings, repo })} />
+      <TextBox
+        label="Логин пользователя"
+        value={settings.login}
+        onChange={login => setSettings({ ...settings, login })}
+      />
+      <TextBox
+        label="Название репозитория"
+        value={settings.repo}
+        onChange={repo => setSettings({ ...settings, repo })}
+      />
       <Chips
-        placeholder="blacklist logins"
+        placeholder="Список логинов для исключения"
         values={settings.blacklist}
         onChange={blacklist => setSettings({ ...settings, blacklist })}
         canBeDeleted={() => true}

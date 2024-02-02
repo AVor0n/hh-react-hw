@@ -4,6 +4,7 @@ import { SettingsPanel } from '../widgets/EditSettingsPanel';
 import './style.css';
 import { useApi, useSettings } from '../contexts';
 import { useAsync } from '../hooks';
+import { ReviewersInfo } from '../widgets/ReviewersInfo';
 
 export const App = () => {
   const { github } = useApi();
@@ -24,9 +25,18 @@ export const App = () => {
         onClickSearch={searchReviewers.request}
         loading={searchReviewers.isLoading}
       />
+
       {settingsVisible && <SettingsPanel />}
       {!!searchReviewers.error && <div>{searchReviewers.error}</div>}
-      {searchReviewers.data && <div> {searchReviewers.data.map(({ login }) => login).join(', ')}</div>}
+      {searchReviewers.data && (
+        <ReviewersInfo
+          reviewers={searchReviewers.data.map(user => ({
+            login: user.login,
+            url: user.html_url,
+            avatarUrl: user.avatar_url,
+          }))}
+        />
+      )}
     </div>
   );
 };

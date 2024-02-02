@@ -1,0 +1,22 @@
+.container {
+  padding: 16px;
+
+  border: 1px solid blue;
+  border-radius: 16px;
+}
+
+.header {
+  margin: 0;
+  margin-block-end: 16px;
+  padding: 0;
+}
+
+.reviewers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  max-block-size: 186px;
+
+  overflow-y: auto;
+}
