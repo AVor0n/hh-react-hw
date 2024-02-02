@@ -1,1 +1,0 @@
-export { ReviewersInfo } from './ReviewersInfo';
