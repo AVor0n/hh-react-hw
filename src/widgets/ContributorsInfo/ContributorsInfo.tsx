@@ -1,14 +1,9 @@
 import { Persona } from '../../components';
+import { User } from '../../types';
 import * as styles from './ContributorsInfo.module.css';
 
-interface Contributor {
-  login?: string;
-  url?: string;
-  avatarUrl?: string;
-}
-
 interface ContributorsInfoProps {
-  contributors: Contributor[];
+  contributors: User[];
 }
 
 export const ContributorsInfo = ({ contributors }: ContributorsInfoProps) => {
@@ -17,9 +12,14 @@ export const ContributorsInfo = ({ contributors }: ContributorsInfoProps) => {
       <h2 className={styles.header}>Топ-100 контрибьюторов репозитория</h2>
       <div className={styles.contributors}>
         {contributors.map(({ login, url, avatarUrl }) => (
-          <Persona key={login} text={login ?? ''} avatar={avatarUrl} onClick={() => window.open(url)} />
+          <Persona
+            key={login}
+            text={login ?? ''}
+            avatar={avatarUrl}
+            onClick={() => window.open(url)}
+            tooltip="Открыть github профиль"
+          />
         ))}
-        h
       </div>
     </div>
   );
