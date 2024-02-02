@@ -5,7 +5,7 @@ import './style.css';
 
 export const App = () => {
   const [settingsVisible, setSettingsVisible] = useState(false);
-  const toggleSettingsVisible = () => setSettingsVisible((visible) => !visible);
+  const toggleSettingsVisible = () => setSettingsVisible(visible => !visible);
 
   const searchReviewer = () => {};
 

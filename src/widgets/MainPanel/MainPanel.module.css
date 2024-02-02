@@ -1,17 +1,20 @@
 .container {
-  width: fit-content;
-  margin-inline: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 16px;
-  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+
+  inline-size: fit-content;
+  margin-inline: auto;
   padding: 16px;
+
   border: 1px solid blue;
+  border-radius: 16px;
 }
 
 .header {
   margin: 0;
+
   font-family: 'Sixtyfour', sans-serif;
   word-wrap: nowrap;
 }

@@ -19,8 +19,8 @@ export const InputField = ({ placeholder, onAdd }: InputFieldProps) => {
       className={styles.input}
       value={value}
       placeholder={placeholder}
-      onChange={(event) => setValue(event.target.value)}
-      onKeyUp={(event) => event.key === 'Enter' && onAddValue(value)}
+      onChange={event => setValue(event.target.value)}
+      onKeyUp={event => event.key === 'Enter' && onAddValue(value)}
       onBlur={() => onAddValue(value)}
     />
   );

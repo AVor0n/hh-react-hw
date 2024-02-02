@@ -1,8 +1,9 @@
-.app{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 600px;
-    margin-inline: auto;
-    margin-top: 20px;
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  inline-size: 600px;
+  margin-block-start: 20px;
+  margin-inline: auto;
 }

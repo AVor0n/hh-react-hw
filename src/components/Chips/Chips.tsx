@@ -18,13 +18,13 @@ export const Chips = ({ values, onChange, canBeDeleted, placeholder }: ChipsProp
   };
 
   const onDeleteChip = (chipId: string) => {
-    onChange(values.filter((val) => val !== chipId));
+    onChange(values.filter(val => val !== chipId));
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.chipsContainer}>
-        {values.map((chipLabel) => (
+        {values.map(chipLabel => (
           <Chip
             key={chipLabel}
             label={chipLabel}

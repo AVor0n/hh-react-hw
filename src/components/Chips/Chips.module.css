@@ -1,9 +1,10 @@
 .container {
-  border: 1px solid silver;
   padding: 8px;
+
+  border: 1px solid silver;
   border-radius: 4px;
 
-  &:focus-within{
+  &:focus-within {
     border: 1px solid #3369f3;
   }
 }
@@ -13,13 +14,15 @@
   flex-wrap: wrap;
   gap: 4px;
 
-  &:not(:empty){
-    margin-bottom: 8px;
+  &:not(:empty) {
+    margin-block-end: 8px;
   }
 }
 
 .input {
-  width: 100%;
-  outline: none;
+  inline-size: 100%;
+
   border: none;
+
+  outline: none;
 }

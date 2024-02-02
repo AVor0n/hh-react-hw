@@ -1,21 +1,27 @@
 .button {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding-inline: 10px;
+
   font-size: inherit;
   text-decoration: none;
+
   border: none;
   border-radius: 8px;
 }
 
 .primary {
   color: #ffffff;
+
   background-color: #3369f3;
 
   &:hover:not(:disabled) {
     background-color: #0e4ae5;
+
     cursor: pointer;
   }
 
@@ -26,10 +32,12 @@
 
 .ghost {
   color: #3369f3;
+
   background-color: #ffffff;
 
   &:hover:not(:disabled) {
     background-color: #e6e6e6;
+
     cursor: pointer;
   }
 
@@ -40,6 +48,7 @@
 
 .disabled {
   background-color: #bcbcbc;
+
   cursor: auto;
 }
 
@@ -53,25 +62,26 @@
 }
 
 .m {
+  --loader-size: 15px;
   block-size: 24px;
   min-inline-size: 24px;
-  --loader-size: 15px;
 }
 
 .l {
+  --loader-size: 20px;
   block-size: 32px;
   min-inline-size: 32px;
-  --loader-size: 20px;
 }
 
 .xl {
-  block-size: 36px;
-  min-width: 36px;
   --loader-size: 20px;
+  block-size: 36px;
+  min-inline-size: 36px;
 }
 
 .circle {
   block-size: auto;
+
   border-radius: 50%;
   aspect-ratio: 1/1;
 }
@@ -83,11 +93,14 @@
     position: absolute;
     inset: 0;
     content: '';
+
     inline-size: var(--loader-size);
     block-size: var(--loader-size);
     margin: auto;
+
     border: 2px solid transparent;
     border-radius: 50%;
+
     animation: loading 0.8s linear infinite;
     border-block-start-color: #ffffff;
   }

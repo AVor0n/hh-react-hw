@@ -7,12 +7,12 @@ export const EditSettingsPanel = () => {
 
   return (
     <div className={styles.container}>
-      <TextBox label="login" onChange={(login) => setSettings({ ...settings, login })} />
-      <TextBox label="repo name" onChange={(repo) => setSettings({ ...settings, repo })} />
+      <TextBox label="login" onChange={login => setSettings({ ...settings, login })} />
+      <TextBox label="repo name" onChange={repo => setSettings({ ...settings, repo })} />
       <Chips
         placeholder="blacklist logins"
         values={settings.blacklist}
-        onChange={(blacklist) => setSettings({ ...settings, blacklist })}
+        onChange={blacklist => setSettings({ ...settings, blacklist })}
         canBeDeleted={() => true}
       />
     </div>

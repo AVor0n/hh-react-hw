@@ -17,7 +17,7 @@ export const TextBox = ({ label, onChange, ...props }: TextboxProps) => {
         <input
           className={styles.input}
           placeholder={label}
-          onChange={(event) => onChange?.(event.target.value)}
+          onChange={event => onChange?.(event.target.value)}
           {...props}
         />
         <div className={styles.label}>{label}</div>

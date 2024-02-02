@@ -10,7 +10,7 @@ const meta = {
 
 export default meta;
 
-const Template: StoryFn<typeof Chips> = (args) => {
+const Template: StoryFn<typeof Chips> = args => {
   const [values, setValues] = useState(args.values);
   return <Chips {...args} values={values} onChange={setValues} />;
 };
@@ -26,5 +26,5 @@ export const WithPermanentChips = Template.bind({});
 WithPermanentChips.args = {
   values: ['first', 'red', 'second'],
   placeholder: 'Введите значение',
-  canBeDeleted: (value) => !['first', 'second'].includes(value),
+  canBeDeleted: value => !['first', 'second'].includes(value),
 };
