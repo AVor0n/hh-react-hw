@@ -37,7 +37,7 @@ export const App = () => {
 
       {settingsVisible && <SettingsPanel />}
 
-      {!!getContributors.error && <div>{getContributors.error}</div>}
+      {!!getContributors.error && <div className="error">{getContributors.error}</div>}
 
       {getContributors.data && (
         <ContributorsInfo
