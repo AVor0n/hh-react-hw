@@ -1,4 +1,4 @@
-import { InputField } from './components/InputField';
+import { InputField } from './components';
 import { Chip } from '../Chip';
 import * as styles from './Chips.module.css';
 

@@ -1,6 +1,6 @@
 import { PropsWithChildren, createContext, useContext, useMemo, useState } from 'react';
-import { Settings } from '../types';
-import { LocaleStorage } from '../utils';
+import { Settings } from '@types';
+import { LocaleStorage } from '@utils';
 
 const LS_KEY = 'settings';
 

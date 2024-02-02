@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import { MainPanel } from '../widgets/MainPanel';
-import { SettingsPanel } from '../widgets/EditSettingsPanel';
+import { ContributorsInfo, MainPanel, ReviewerInfo, SettingsPanel } from '@widgets';
+import { useApi, useSettings } from '@contexts';
+import { useAsync } from '@hooks';
+import { User } from '@types';
 import './style.css';
-import { useApi, useSettings } from '../contexts';
-import { useAsync } from '../hooks';
-import { ContributorsInfo } from '../widgets/ContributorsInfo';
-import { User } from '../types';
-import { ReviewerInfo } from '../widgets/ReviewerInfo';
 
 export const App = () => {
   const { github } = useApi();

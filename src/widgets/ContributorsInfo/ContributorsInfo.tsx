@@ -1,5 +1,5 @@
-import { Persona } from '../../components';
-import { User } from '../../types';
+import { Persona } from '@components';
+import { User } from '@types';
 import * as styles from './ContributorsInfo.module.css';
 
 interface ContributorsInfoProps {

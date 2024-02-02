@@ -1,1 +1,1 @@
-export { LocaleStorage } from './LocaleStorage';
+export * from './LocaleStorage';

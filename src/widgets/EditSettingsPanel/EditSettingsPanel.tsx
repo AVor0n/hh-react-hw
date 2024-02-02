@@ -1,5 +1,5 @@
-import { Chips, TextBox } from '../../components';
-import { useSettings } from '../../contexts';
+import { Chips, TextBox } from '@components';
+import { useSettings } from '@contexts';
 import * as styles from './EditSettingsPanel.module.css';
 
 export const EditSettingsPanel = () => {

@@ -1,4 +1,4 @@
-import { Button } from '../../components';
+import { Button } from '@components';
 import * as styles from './MainPanel.module.css';
 
 interface MainPanelProps {

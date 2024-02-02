@@ -1,5 +1,5 @@
 import { PropsWithChildren, createContext, useContext, useMemo } from 'react';
-import { GithubApi } from '../api';
+import { GithubApi } from '@api';
 
 interface Context {
   github: GithubApi;
