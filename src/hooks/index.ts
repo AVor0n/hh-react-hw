@@ -1,1 +1,1 @@
-export { useFetch } from './useFetch';
+export { useAsync } from './useAsync';
