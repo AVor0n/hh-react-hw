@@ -1,0 +1,17 @@
+.container {
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid blue;
+}
+
+.header {
+  margin: 0;
+  font-family: 'Sixtyfour', sans-serif;
+  word-wrap: nowrap;
+}
