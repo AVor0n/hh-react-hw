@@ -16,3 +16,10 @@ export interface User {
   /* Ссылка на аватар пользователя */
   avatarUrl?: string;
 }
+
+/** Интерфейс для хранения состояния http запросов */
+export interface AsyncState<D> {
+  isLoading: boolean;
+  error: string | null;
+  data: D | null;
+}
