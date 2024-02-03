@@ -1,6 +1,6 @@
 import { Octokit } from 'octokit';
 
-export class GithubApi {
+class GithubApi {
   private api = new Octokit({ auth: import.meta.env.VITE_GITHUB_AUTH }).rest;
 
   public getContributors = async (owner: string, repo: string) => {
@@ -8,3 +8,5 @@ export class GithubApi {
     return data;
   };
 }
+
+export const githubApi = new GithubApi();
