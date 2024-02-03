@@ -1,10 +1,8 @@
-name: Build and Deploy
+name: Build and Deploy Storybook
 on:
   push:
-    branches:
-     - master
-     - develop
-    paths: ["src/components/**"]
+    branches: ['master', 'develop']
+    paths: ['src/components/**']
 
 jobs:
   build-and-deploy:
@@ -21,6 +19,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          target-folder: docs
           folder: docs-build
           clean: true

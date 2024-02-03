@@ -18,7 +18,7 @@ const config: StorybookConfig = {
   },
   viteFinal(config) {
     return mergeConfig(config, {
-      base: '/hh-react-hw/',
+      base: '/hh-react-hw/docs/',
     });
   },
 };
