@@ -1,0 +1,1 @@
+export { ContributorsInfo } from './ContributorsInfo';

@@ -1,0 +1,49 @@
+:root {
+  --size: 24px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+  inline-size: fit-content;
+  block-size: var(--size);
+  box-sizing: border-box;
+
+  border: 1px solid silver;
+  border-radius: var(--size);
+
+  background-color: whitesmoke;
+}
+
+.text {
+  padding-block: 4px;
+  padding-inline: 8px 4px;
+
+  &:only-child {
+    padding-inline-end: 8px;
+  }
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  inline-size: var(--size);
+  block-size: var(--size);
+  margin-inline-start: auto;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
