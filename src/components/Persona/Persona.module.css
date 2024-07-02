@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  inline-size: fit-content;
+  max-block-size: 30px;
+  padding: 2px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  border: 1px solid silver;
+  border-radius: 20px;
+
+  background-color: whitesmoke;
+}
+
+.interactive {
+  cursor: pointer;
+
+  transition:
+    color,
+    border-color 0.2s linear;
+
+  &:hover {
+    color: blue;
+
+    border: 1px solid blue;
+  }
+}
+
+.image {
+  inline-size: 24px;
+  block-size: 24px;
+
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.text {
+  padding-inline: 4px;
+
+  font-size: 14px;
+}
